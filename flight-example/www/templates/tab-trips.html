@@ -1,0 +1,29 @@
+<ion-view view-title="Trips" cache-view="false">
+
+
+<ion-nav-buttons side="left">
+  <a class="button button-small" href="#/tab/searchtrips">Search</a>
+</ion-nav-buttons> 
+
+<ion-nav-buttons side="right">
+  <a class="button button-small" href="#/tab/addtrip">Add</a>
+</ion-nav-buttons> 
+
+
+  <ion-content>
+
+
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="trip in trips" type="item-text-wrap" href="#/tab/trips/{{trip.objectId}}">
+        <h2>{{trip.fromcity}}--{{trip.tocity}}</h2>
+        <p>{{trip.tripdate}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(trip)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

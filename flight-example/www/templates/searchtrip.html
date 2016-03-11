@@ -1,0 +1,31 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Search trip" ng-controller="SearchTripsCtrl as controller">
+
+
+  <ion-content>
+
+   <!-- <search-bar ng-model="search"></search-bar> -->
+   <center>
+   <input placeholder="search keywords" ng-model="controller.parameter"></input> <button class="button button-small" ng-click="search()">Go</button>
+</center>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="trip in searchtrips" type="item-text-wrap" href="#/tab/trips/{{trip.objectId}}">
+        <h2>{{trip.fromcity}}--{{trip.tocity}}</h2>
+        <p>{{trip.tripdate}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(trip)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+
+
+</ion-view>
