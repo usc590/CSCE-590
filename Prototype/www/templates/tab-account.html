@@ -1,0 +1,28 @@
+<ion-view view-title="Account">
+  <ion-content>
+   	<div class="list">
+   		<h1 class="text-center assertive" style="margin-top: 20px;">
+   			Log In 
+   		</h1>
+   		<br>
+   		<label class="item item-input col col-80 col-offset-10">
+   			<input class="text-center" type="text" placeholder = "Email" ng-model="controller.email">
+   		</label>
+   		<br>
+   		<label class="item item-input col col-80 col-offset-10">
+   			<input class="text-center" type="text" placeholder = "Password" ng-model="controller.password">
+   		</label>
+   		<br>
+   		<div>
+   		<button class="col col-80 col-offset-10 button button-outline button-positive" ng-click="login()">
+   			Login
+   		</button>
+   	</div>
+   	<div>
+   		<button class="col col-80 col-offset-10 button button-outline button-assertive" ng-click="register()">
+   			Register
+   		</button>
+   	</div>
+  </ion-content>
+
+</ion-view>
