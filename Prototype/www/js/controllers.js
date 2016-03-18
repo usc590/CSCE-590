@@ -6,6 +6,8 @@ angular.module('starter.controllers', [])
 
 .controller('OrderCtrl', function($scope) {})
 
+.controller('AddItemCtrl', function($scope) {})
+
 .controller('MenusCtrl', function($scope, Menus) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.

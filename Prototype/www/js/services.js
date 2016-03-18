@@ -6,29 +6,23 @@ angular.module('starter.services', [])
   // Some fake testing data
   var menus = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
+    name: 'Chocolate',
+    lastText: '$2',
+    face: 'img/icecreamChocolate.jpg',
+    description: 'famous Cholocate'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
+    name: 'Strawberry',
+    lastText: '$2',
+    face: 'img/icecreamStrawberry.jpg',
+    description: 'famous Cholocate'
+    
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    name: 'Vanilla',
+    lastText: '$2',
+    face: 'img/icecreamVanilla.jpg',
+    description: 'famous Cholocate'
   }];
 
   return {

@@ -49,6 +49,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+      .state('tab.additem', {
+      url: '/additem',
+      views: {
+        'tab-items': {
+          templateUrl: 'templates/additem.html',
+          controller: 'AddItempCtrl'
+        }
+      }
+    })
 
   .state('tab.menus', {
       url: '/menus',
@@ -99,7 +108,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-          
+
 
 ;
 

@@ -1,7 +1,18 @@
 <ion-view view-title="Menus">
+<ion-nav-buttons side="left">
+  <a class="button button-small icon ion-android-search" href="#/tab/searchitems">Search</a>
+</ion-nav-buttons> 
+
+<ion-nav-buttons side="right">
+  <a class="button button-small icon ion-android-add" href="#/tab/additem">Add</a>
+</ion-nav-buttons> 
+
   <ion-content>
+
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menus/{{menu.id}}">
+      
+
         <img ng-src="{{menu.face}}">
         <h2>{{menu.name}}</h2>
         <p>{{menu.lastText}}</p>
