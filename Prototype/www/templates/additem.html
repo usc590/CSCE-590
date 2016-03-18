@@ -1,4 +1,4 @@
-<ion-view view-title="Add item" ng-controller="Additem as controller">
+<ion-view view-title="Add item" ng-controller="AddItemCtrl as controller">
 
 
 <ion-nav-buttons side="right">
@@ -9,16 +9,32 @@
   <ion-content class="padding">
 
 
-    <p>
+    <!-- <p>
       Proudct Name:
-     <input type="text">
+     <input  type="text" style="width: 80%; height: 30px; border-style: solid; border-width: 1px; border-color: black;">
      Product Picture:
      <button>Upload</button>
      Description:
-     <input type="text">
+     <input type="text" style="width: 80%; height: 30px;">
      Unit Price:
-     <input type="text">
+     <input type="text" style="width: 80%; height: 30px;">
     
-    </p>
+    </p> -->
+
+    <div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="Product Name" ng-model="controller.productName">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Price" ng-model="controller.price">
+  </label>
+    <label class="item item-input">
+    <input type="text" placeholder="Quantity" ng-model="controller.quantity">
+  </label>
+  <label class="item item-input">
+    <textarea placeholder="Description"></textarea>
+  </label>
+
+</div>
   </ion-content>
 </ion-view>
